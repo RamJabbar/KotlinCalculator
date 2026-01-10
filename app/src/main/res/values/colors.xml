@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="softpink">#FFBB86FC</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="kuning">#FFEF5F</color>
+    <color name="ungu">#9929EA</color>
+    <color name="ireng">#1B1616</color>
+    <color name="oren">#E9762B</color>
+
+</resources>
