@@ -20,6 +20,16 @@ private var canAddOperation = false
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
+
+            ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+                val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+                v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+                insets
+            }
+        }
+
+
         workingsTV = findViewById(R.id.workingsTV)
         resultTV = findViewById(R.id.resultTV)
         }
